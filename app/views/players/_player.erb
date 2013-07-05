@@ -1,0 +1,8 @@
+    <li>
+      <%= player.name %>
+      (<%= link_to "Details", player_path(player) %> |
+      <%= link_to "Bearbeiten", edit_player_path(player) %> |
+      <%= link_to "löschen", player,
+                  confirm: "Wirklich löschen?",
+                  method: :delete %>)
+    </li>

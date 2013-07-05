@@ -1,0 +1,12 @@
+<% @title=" - Liste" %>
+<h2>Spielerliste</h2>
+<ul>
+  <%= render partial: "player", collection: @players %>
+</ul>
+
+<p>
+  <%= link_to "Neuen Spieler anlegen", new_player_path %>
+</p>
+<p>
+  <%= link_to "Benutzerkonto erstellen", new_user_path %>
+</p>
